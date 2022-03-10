@@ -1,0 +1,9 @@
+query {
+  	user(id:"5"){
+	    userId
+	    userName
+	    userAddress
+	    password
+	    userPhone
+  	}
+}

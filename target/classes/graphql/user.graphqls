@@ -1,0 +1,30 @@
+type UserModel {
+
+    userId: ID
+    userName: String
+    userAddress: String
+    userPhone: String
+    password: String
+
+}
+
+input UserModelInput {
+
+	userId: ID
+    userName: String
+    userAddress: String
+    userPhone: String
+    password: String
+
+}
+
+type Query {
+
+	users:[UserModel]
+    user(id:ID):UserModel
+}
+type Mutation {
+	
+	addUser(input: UserModelInput): UserModel
+	
+}
